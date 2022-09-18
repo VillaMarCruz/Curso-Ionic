@@ -1,0 +1,12 @@
+<app-header [title]="title"></app-header>
+
+<ion-content>
+  <ion-button (click)="presentAlert()" expand="block">
+    Alerta simple
+  </ion-button>
+  <ion-button (click)="presentAlertMultiple()" expand="block">
+    Alerta multiple
+  </ion-button>
+  <p>{{ handlerMessage }}</p>
+  <p>{{ roleMessage }}</p>
+</ion-content>

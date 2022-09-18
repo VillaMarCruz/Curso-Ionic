@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="list" ></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentAlert()">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{lugar.titulo | uppercase}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- CARD -->
+  <ion-card>
+    <img src="{{lugar.avatar}}" alt="">
+    <ion-card-header>
+      <ion-card-title>{{lugar.titulo}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{lugar.descripcion}}
+    </ion-card-content>
+  </ion-card>
+  <!-- LISTA -->
+  <ion-list>
+    <ion-item *ngFor="let comentario of lugar.comentarios" lines="full">
+      <ion-label class="ion-text-wrap">
+        <ion-text color="primary">
+          <h3>{{comentario.nombre}}</h3>
+        </ion-text>
+        <p>{{comentario.descripcion}}</p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="alertaComentario()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

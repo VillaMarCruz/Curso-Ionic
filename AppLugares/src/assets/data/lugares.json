@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "avatar": "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900",
+    "titulo": "Paris",
+    "descripcion": "Lugar hermoso",
+    "comentarios": [
+      {
+        "descripcion": "Bonito lugar si he ido"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "avatar": "https://h2gconsulting.com/wp-content/uploads/2020/01/Espan%CC%83a-puerta-al-mercado-europeo-scaled-1.jpg",
+    "titulo": "España",
+    "descripcion": "Lugar hermoso es España",
+    "comentarios": [
+      {
+        "descripcion": "Bonito lugar si he ido"
+      }
+    ]
+  }
+]

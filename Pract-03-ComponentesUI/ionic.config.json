@@ -1,0 +1,7 @@
+{
+  "name": "Pract-02-Introduccion-Modulos-Componentes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

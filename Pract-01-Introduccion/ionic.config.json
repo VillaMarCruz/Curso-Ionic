@@ -1,0 +1,7 @@
+{
+  "name": "Pract-01-Introduccion",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

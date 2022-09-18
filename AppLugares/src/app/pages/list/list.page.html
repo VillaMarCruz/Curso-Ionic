@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="airplane"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="earth"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Lugares</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item-sliding *ngFor="let lugar of lugares" >
+    <ion-item-options side="start">
+      <ion-item-option routerLink="/editar/{{lugar.id}}">Editar</ion-item-option>
+    </ion-item-options>
+    <ion-item routerLink="/card/{{lugar.id}}" detail>
+      <ion-avatar slot="start">
+        <img src="{{lugar.avatar}}">
+      </ion-avatar>
+      <ion-label>{{ lugar.titulo }}</ion-label>
+    </ion-item>
+  </ion-item-sliding>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/insert">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

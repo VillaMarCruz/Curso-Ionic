@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="list" ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Inserte un nuevo lugar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="{{lugar.avatar}}" alt="">
+    <ion-card-content>
+      <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+        <ion-item>
+          <ion-label position="floating">Nombre del Lugar</ion-label>
+          <ion-input type="text" id="titulo" name="titulo" [(ngModel)]="lugar.titulo" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Url Imagen</ion-label>
+          <ion-input type="text" id="avatar" name="avatar" [(ngModel)]="lugar.avatar" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Descripcion</ion-label>
+          <ion-input type="text" id="descripcion" name="descripcion" [(ngModel)]="lugar.descripcion" required></ion-input>
+        </ion-item>
+        <ion-button expand="full" type="submit" [disabled]="formulario.invalid">Guardar</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

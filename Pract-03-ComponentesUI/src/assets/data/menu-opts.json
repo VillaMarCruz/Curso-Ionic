@@ -1,0 +1,21 @@
+[{
+    "icon": "american-football-outline",
+    "name": "Action Sheet",
+    "redirectTo": "/acction-sheet"
+  },
+  {
+    "icon": "alert-circle-outline",
+    "name": "Alert",
+    "redirectTo": "/alerta"
+  },
+  {
+    "icon": "apps-outline",
+    "name": "Acordion",
+    "redirectTo": "/accordion"
+  },
+  {
+    "icon": "apps-outline",
+    "name": "List",
+    "redirectTo": "/ion-list"
+  }
+]
